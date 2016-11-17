@@ -1,0 +1,41 @@
+// Configuration file, sets the values for the cvars, many of these values are
+// constants and cannot be changed in game, only through being read from this
+// file at startup
+
+// Various information display toggles
+showfps						1					// show frames per second
+showpos						1					// show the camera position
+showrenderstats				1					// show statistics on rendering
+
+cleartarget					1					// clear the screen before rendering
+pakdir	 					g:\					// directory to scan for pak files
+
+// Configuration variables for the renderer
+showtris 					0					// 0 - dont show, 1 - show white, 2 - show diffuse
+display_width				1280				// fullscreen display width (fullscreen only)
+display_height				1024				// fullscreen display height (fullscreen only)
+display_color_depth			32					// color depth
+display_z_depth				24					// z buffer depth
+display_stencil_depth		8					// stencil buffer depth
+display_back_buffers		2					// number of back buffers (2 or 3)
+display_fullscreen			0					// run fullscreen
+display_vsync				0					// enable vsync (fullscreen only)
+
+// Console configuration
+console_caret_flash_time	0.5f				// how often the caret flickers on or off
+console_max_visibility		1.0f				// amount of screen space covered by console (0.0 to 1.0)
+console_log_file			console.log			// filename to log console output to
+console_shader				console				// background shader for the console
+
+// Configuration cvars, highly unlikely to change, changes to these may cause
+// some nasty behaviour, defaults listed here
+max_shaders					4096				// Size of shader array
+max_shader_passes			4096				// Size of shader pass array
+max_sounds					32					// Most different sounds that can be loaded at once
+max_simultaneous_sounds		32					// Most sounds that can be playing at once
+max_static_verts			60000				// Size of static vertex buffer
+max_static_inds				120000				// Size of static index buffer
+max_dynamic_verts			20000				// Size of dynamic vertex buffer
+max_dynamic_inds			20000				// Size of dynamic index buffer
+nosound						0					// Disable sound
+verbose_shader_parsing		0					// Print shader parse errors to console (spammy)

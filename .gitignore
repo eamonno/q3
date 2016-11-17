@@ -1,0 +1,11 @@
+Debug/
+Release/
+*.log
+*.map
+*.entities
+*.scc
+*.dsp
+*.dsw
+*.ncb
+*.opt
+*.plg
